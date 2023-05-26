@@ -1,0 +1,140 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color: #c2c2c2;
+$title-color: rgb(255, 70, 70);
+$border-color: yellowgreen;
+$title-size: 2em;
+
+// This is a silent comment. I can write a whole text that will not be seen in the end css but it can be helpful or just fun for me.
+// Noice.
+
+// Another line for fun.
+
+// The end.
+/* Normal comment right here */
+
+html {
+  font-size: (12 / 16) * 1em;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  width: 100vw;
+  background: grey;
+  height: 100%;
+  main {
+    background: white;
+    width: 80vw;
+    height: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 2em;
+  }
+}
+
+h1 {
+  font: {
+    size: $title-size;
+  }
+  padding: 0 0 1em 0;
+}
+h2 {
+  font: {
+    size: 1.2em;
+  }
+  padding: {
+    top: 1em;
+  }
+}
+h3 {
+  font: {
+    size: 1.2em;
+    weight: bold;
+  }
+  padding: 1em 0 0.4em 0;
+}
+
+section {
+  border-bottom: 2px solid grey;
+  display: flex;
+  flex-flow: column wrap;
+  &:last-of-type {
+    border: none;
+  }
+  article {
+    display: flex;
+    flex-flow: row wrap;
+    min-width: 20px;
+
+    h3 {
+      width: 100%;
+    }
+  }
+}
+
+label {
+  padding: 0.2em 0 0 0;
+  font: {
+    size: 1em;
+    family: sans-serif;
+  }
+}
+
+article {
+  width: 100%;
+  margin: 1em 0;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+input {
+  height: 2em;
+  max-width: 100%;
+  width: max-content;
+}
+.form {
+  display: flex;
+  flex-flow: row wrap;
+  padding-right: 1em;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex: 1 1 46%;
+}
+.half {
+  max-width: 50%;
+  width: 48%;
+  justify-content: space-between;
+}
+.three {
+  max-width: 30%;
+  width: 33%;
+  justify-content: space-between;
+}
+
+.one {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+.col {
+  display: flex;
+  flex-flow: column wrap;
+  margin-bottom: 1em;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+.phone {
+  justify-content: flex-start;
+}
+.three {
+  width: 30px;
+  max-width: 30px;
+  margin-right: 1em;
+}
+button {
+  align-self: start;
+}

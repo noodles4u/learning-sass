@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style_00.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <header><h1>Emergency Contact and Medical Information</h1></header>
+      <!-- part 1-->
+      <section class="contact-info">
+        <article>
+          <div class="form half">
+            <h3>Name</h3>
+            <div class="col half">
+              <input type="text" /><label for="">First</label>
+            </div>
+            <div class="col half">
+              <input type="text" /><label for="">Last</label>
+            </div>
+          </div>
+        </article>
+        <article>
+          <div class="form">
+            <h3>Gender</h3>
+            <select class="one" name="gender-sel" id="gender">
+              <option value="M">M</option>
+              <option value="F">F</option>
+              <option value="X">X</option>
+              <option value="Not sharing">Not sharing</option>
+            </select>
+          </div>
+          <div class="form">
+            <h3>Date of Birth</h3>
+            <input
+              type="date"
+              id="start"
+              name="birth-date"
+              value="2023-05-26"
+              min="2018-01-01"
+              max="2025-12-31"
+            />
+          </div>
+        </article>
+      </section>
+      <!-- part 2-->
+      <section class="emergency-contact">
+        <h2>Emergency Contact</h2>
+        <article>
+          <div class="form half">
+            <h3>Name</h3>
+            <div class="col half">
+              <input type="text" /><label for="">First</label>
+            </div>
+            <div class="col half">
+              <input type="text" /><label for="">Last</label>
+            </div>
+          </div>
+          <div class="form">
+            <h3>Relationship</h3>
+            <div><input type="text" /></div>
+          </div>
+        </article>
+        <article>
+          <div class="form col one">
+            <h3>Name</h3>
+            <div class="col one">
+              <input class="one" type="text" /><label class="one" for=""
+                >Street Address</label
+              >
+            </div>
+            <div class="col one">
+              <input class="one" type="text" /><label class="one" for=""
+                >Address Line 2</label
+              >
+            </div>
+            <div class="form one">
+              <div class="col half">
+                <input class="one" type="text" /><label class="one" for=""
+                  >City</label
+                >
+              </div>
+              <div class="col half">
+                <input class="one" type="text" /><label class="one" for=""
+                  >State / Province / Region</label
+                >
+              </div>
+            </div>
+            <div class="form one">
+              <div class="col half">
+                <input class="one" type="text" /><label class="one" for=""
+                  >Postal / Zip Code</label
+                >
+              </div>
+              <div class="col half">
+                <select name="" id=""></select
+                ><label class="one" for="">Country</label>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article>
+          <div class="form half phone">
+            <h3>Home Phone</h3>
+            <div class="col three">
+              <input type="text" /><label for="">###</label>
+            </div>
+            <div class="col three">
+              <input type="text" /><label for="">###</label>
+            </div>
+            <div class="col three">
+              <input type="text" /><label for="">###</label>
+            </div>
+          </div>
+          <div class="form half phone">
+            <h3>Work Phone</h3>
+            <div class="col three">
+              <input type="text" /><label for="">###</label>
+            </div>
+            <div class="col three">
+              <input type="text" /><label for="">###</label>
+            </div>
+            <div class="col three">
+              <input type="text" /><label for="">###</label>
+            </div>
+          </div>
+        </article>
+      </section>
+      <!-- part 3-->
+
+      <section class="medical-info">
+        <h2>Medical Information</h2>
+        <article>
+          <div class="form one">
+            <h3>Hospital / Clinic Preference</h3>
+            <div class="col one">
+              <input class="one" type="text" />
+            </div>
+          </div>
+        </article>
+        <article>
+          <div class="form half">
+            <h3>Insurance Company</h3>
+            <div class="col one">
+              <input class="one" type="text" />
+            </div>
+          </div>
+          <div class="form half">
+            <h3>Policy Number</h3>
+            <div class="col one">
+              <input class="one" type="text" />
+            </div>
+          </div>
+        </article>
+
+        <article>
+          <div class="form half">
+            <h3>Physician's Name</h3>
+            <div class="col one">
+              <input class="one" type="text" />
+            </div>
+          </div>
+          <div class="form half phone">
+            <h3>Phone Number</h3>
+            <div class="col three">
+              <input type="text" /><label for="">###</label>
+            </div>
+            <div class="col three">
+              <input type="text" /><label for="">###</label>
+            </div>
+            <div class="col three">
+              <input type="text" /><label for="">###</label>
+            </div>
+          </div>
+        </article>
+        <article>
+          <div class="form one">
+            <h3>Allergies / Special Health Considerations</h3>
+            <div class="col one">
+
+              <textarea class="one" type="text" />
+              </textarea>
+
+            </div>
+          </div>
+        </article>
+        <button  type="button" value="submit">Submit</button>
+      </section>
+    </main>
+  </body>
+</html>
