@@ -1,0 +1,140 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color: #c2c2c2;
+$title-color: rgb(255, 70, 70);
+$border-color: yellowgreen;
+
+// This is a silent comment. I can write a whole text that will not be seen in the end css but it can be helpful or just fun for me.
+// Noice.
+
+// Another line for fun.
+
+// The end.
+/* Normal comment right here */
+
+html {
+  font-size: (12 / 16) * 1em;
+  box-sizing: border-box;
+
+  padding: 0;
+  margin: 0;
+}
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  background: $primary-color;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  flex-flow: row wrap;
+}
+a {
+  display: inline-block;
+  font-family: serif;
+}
+nav {
+  color: red;
+  display: flex;
+  border: 3px dashed yellow;
+  border-radius: 2em;
+  flex: 1 1 auto;
+  width: 100%;
+  min-height: fit-content;
+  flex-flow: row wrap;
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+    background: yellow;
+  }
+  font: {
+    size: 2em;
+  }
+  ul {
+    display: flex;
+    flex: 1 1 auto;
+    flex-flow: row wrap;
+    a {
+      list-style-type: none;
+      color: red;
+      padding: 1.2em;
+    }
+  }
+  div a {
+    list-style-type: none;
+    color: red;
+    padding: 1.2em;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: red;
+  &:hover {
+    color: yellow;
+  }
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 48%;
+  justify-content: space-between;
+  .container {
+    width: 48%;
+    max-width: 50vw;
+    margin: 1%;
+    background: lightcoral;
+    border: 10px dotted $border-color;
+    min-height: fit-content;
+    display: flex;
+    justify-content: flex-start;
+
+    h1 {
+      color: $title-color;
+      text-decoration: underline;
+      padding: 20px 0.5em;
+      font-size: 2em;
+    }
+    p {
+      font: {
+        family: sans-serif;
+        size: 3em;
+      }
+
+      padding: 20px 1em;
+    }
+  }
+  div:nth-child(5) {
+    width: 100%;
+    max-width: 100%;
+    border: 20px dashed blue;
+    margin: 10em;
+  }
+}
+img {
+  max-width: 100%;
+  align-self: center;
+  &:hover {
+    border: 2px dotted blue;
+  }
+}
+
+.fancy {
+  .gradients & {
+    background: -webkit-linear-gradient(
+      top,
+      #c9de96 0%,
+      #8ab66b 44%,
+      #398235 100%
+    );
+    background: -moz-linear-gradient(
+      top,
+      #c9de96 0%,
+      #8ab66b 44%,
+      #398235 100%
+    );
+    background: linear-gradient(top, #c9de96 0%, #8ab66b 44%, #398235 100%);
+  }
+  .no-gradients & {
+    background: #c9de96;
+  }
+}
