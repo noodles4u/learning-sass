@@ -1,0 +1,32 @@
+nav {
+  color: red;
+  display: flex;
+  border: 3px dashed yellow;
+  border-radius: 2em;
+  flex: 1 1 auto;
+  width: 100%;
+  min-height: fit-content;
+  flex-flow: row wrap;
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+    background: yellow;
+  }
+  font: {
+    size: 2em;
+  }
+  ul {
+    display: flex;
+    flex: 1 1 auto;
+    flex-flow: row wrap;
+    a {
+      list-style-type: none;
+      color: red;
+      padding: 1.2em;
+    }
+  }
+  div a {
+    list-style-type: none;
+    color: red;
+    padding: 1.2em;
+  }
+}
